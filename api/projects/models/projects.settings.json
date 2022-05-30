@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mainViews",
+  "info": {
+    "name": "mainView",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "leftImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "rigthImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "layout": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "ux",
+        "frontend",
+        "backend",
+        "fullstack"
+      ],
+      "required": true,
+      "default": "fullstack"
+    },
+    "MV_UID": {
+      "model": "detail"
+    }
+  }
+}
