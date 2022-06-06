@@ -28,87 +28,6 @@
     "infoProject": {
       "type": "richtext"
     },
-    "infoUserJourney": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "withInfo": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "mockImages": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "codesignAtomic": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "codesignLangUsed": {
-      "type": "richtext",
-      "required": true
-    },
-    "codesignLogo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "codesignDecisions": {
-      "type": "richtext",
-      "required": true
-    },
-    "codesignMoreImg": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "withCodesign": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "resultHomePage": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
     "resultMobileVideo": {
       "model": "file",
       "via": "related",
@@ -116,7 +35,7 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "resultInteractionsVid": {
@@ -126,26 +45,11 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "resultFinalDecision": {
       "type": "richtext",
-      "required": true
-    },
-    "resultFinalDesign": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "withMockups": {
-      "type": "boolean",
-      "default": true,
       "required": true
     },
     "leftImg": {
@@ -173,15 +77,68 @@
       "default": true,
       "required": true
     },
-    "color": {
-      "type": "string",
-      "default": "#FFFFFF",
-      "required": true,
-      "private": false
-    },
     "url": {
       "type": "uid",
       "targetField": "Project",
+      "required": true
+    },
+    "langUsed": {
+      "type": "richtext",
+      "required": true
+    },
+    "brandPres": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "designImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "mainPage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "importantImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "resultVid3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "withVideos": {
+      "type": "boolean",
+      "default": true,
       "required": true
     }
   }
